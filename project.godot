@@ -44,7 +44,7 @@ config/icon="res://icon.png"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/text_editor/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/terminal/plugin.cfg", "res://addons/text_editor/plugin.cfg" )
 
 [physics]
 
