@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "",
+"class": "GitAPI",
+"language": "NativeScript",
+"path": "res://git_api.gdns"
+}, {
 "base": "Control",
 "class": "TE_Editor",
 "language": "GDScript",
@@ -30,6 +35,7 @@ _global_script_classes=[ {
 "path": "res://addons/text_editor/TE_Util.gd"
 } ]
 _global_script_class_icons={
+"GitAPI": "",
 "TE_Editor": "",
 "TE_ExtensionHelper": "",
 "TE_StopWords": "",
@@ -45,6 +51,10 @@ config/icon="res://icon.png"
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/terminal/plugin.cfg", "res://addons/text_editor/plugin.cfg" )
+
+[gdnative]
+
+singletons=[ "res://git_api.gdnlib" ]
 
 [physics]
 
